@@ -188,7 +188,7 @@ graph <- graph +
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("The campus smells like ass, I can't even focus because I’m trying to breathe normally.") +
   labs(fill = "Gender") +
-  theme(plot.title = element_text(size = 14))
+  theme(plot.title = element_text(size = 10.5))
 
 png("Ass_1.png")
 graph
@@ -227,8 +227,6 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
@@ -275,8 +273,6 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
@@ -323,9 +319,6 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
 
@@ -371,8 +364,6 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
@@ -419,9 +410,6 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
 
@@ -466,9 +454,6 @@ if (max(freq$males) >  max(freq$females)) {
 } else {
   max = max(freq$females)
 }
-
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
@@ -515,9 +500,6 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
 
@@ -562,9 +544,6 @@ if (max(freq$males) >  max(freq$females)) {
 } else {
   max = max(freq$females)
 }
-
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
@@ -611,9 +590,6 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
 
@@ -659,9 +635,6 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
 
@@ -706,9 +679,6 @@ if (max(freq$males) >  max(freq$females)) {
 } else {
   max = max(freq$females)
 }
-
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
   geom_bar(stat="identity", position = "dodge")
