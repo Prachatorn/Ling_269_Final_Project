@@ -187,7 +187,8 @@ graph <- graph +
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("The campus smells like ass, I can't even focus because I’m trying to breathe normally.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(size = 14))
 
 png("Ass_1.png")
 graph
