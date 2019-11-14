@@ -1,6 +1,6 @@
-library('dplyr')
-library('plotly')
-library('plyr')
+library("dplyr")
+library("plotly")
+library("plyr")
 library("ggplot2")
 library("tidyverse")
 library("reshape2")
@@ -20,8 +20,8 @@ females <- Dick_1_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Dick_1)
 
-count(males, Dick_1)
-count(females, Dick_1)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(5, 2, 5, 0, 0, 1, 0)
@@ -65,8 +65,8 @@ females <- Cunt_1_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Cunt_1)
 
-count(males, Cunt_1)
-count(females, Cunt_1)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(2, 0, 2, 2, 2, 2, 3)
@@ -113,8 +113,8 @@ females <- Fuck_1_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Fuck_1)
 
-count(males, Fuck_1)
-count(females, Fuck_1)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(2, 0, 0, 2, 2, 4, 3)
@@ -161,8 +161,8 @@ females <- Ass_1_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Ass_1)
 
-count(males, Ass_1)
-count(females, Ass_1)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(2, 8, 3, 0, 1, 0, 0)
@@ -210,8 +210,8 @@ females <- Tit_1_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Tit_1)
 
-count(males, Tit_1)
-count(females, Tit_1)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(3, 1, 4, 1, 3, 1, 0)
@@ -258,8 +258,8 @@ females <- Cunt_2_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Cunt_2)
 
-count(males, Cunt_2)
-count(females, Cunt_2)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(3, 1, 2, 2, 2, 1, 2)
@@ -306,8 +306,8 @@ females <- Dick_2_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Dick_2)
 
-count(males, Dick_2)
-count(females, Dick_2)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(6, 1, 4, 1, 1, 0, 0)
@@ -354,8 +354,8 @@ females <- Ass_2_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Ass_2)
 
-count(males, Ass_2)
-count(females, Ass_2)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(8, 3, 2, 0, 0, 0, 0)
@@ -402,8 +402,8 @@ females <- Fuck_2_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Fuck_2)
 
-count(males, Fuck_2)
-count(females, Fuck_2)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(7, 1, 2, 2, 1, 0, 0)
@@ -450,8 +450,8 @@ females <- Tit_2_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Tits_2)
 
-count(males, Tits_2)
-count(females, Tits_2)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(1, 1, 1, 2, 2, 3, 3)
@@ -498,8 +498,8 @@ females <- Ass_3_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Ass_3)
 
-count(males, Ass_3)
-count(females, Ass_3)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(7, 3, 1, 1, 1, 0, 0)
@@ -546,8 +546,8 @@ females <- Fuck_3_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Fuck_3)
 
-count(males, Fuck_3)
-count(females, Fuck_3)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(8, 3, 0, 2, 0, 0, 0)
@@ -594,8 +594,8 @@ females <- Dick_3_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Dick_3)
 
-count(males, Dick_3)
-count(females, Dick_3)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(8, 1, 2, 1, 1, 0, 0)
@@ -642,8 +642,8 @@ females <- Cunt_3_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Cunt_3)
 
-count(males, Cunt_3)
-count(females, Cunt_3)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(2, 2, 2, 1, 4, 1, 1)
@@ -690,8 +690,8 @@ females <- Tit_3_Freq %>%
   filter(Gender == "Female") %>%
   arrange(Tits_3)
 
-count(males, Tits_3)
-count(females, Tits_3)
+count(males)
+count(females)
 
 taboo <- c(1, 2, 3, 4, 5, 6, 7)
 males <- c(5, 3, 2, 1, 2, 0, 0)
