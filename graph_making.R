@@ -2,7 +2,6 @@ library("dplyr")
 library("plotly")
 library("plyr")
 library("ggplot2")
-library("tidyverse")
 library("reshape2")
 
 # We were playing baseball yesterday, and I got hit right in the dick! / Dick_1
@@ -37,13 +36,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-    geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") +
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("We were playing baseball yesterday, and I got hit right in the dick!") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Dick_1.png")
 graph
@@ -81,17 +79,13 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") +
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("My cunt has been itchy all morning today.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5)) +
 
 png("Cunt_1.png")
 graph
@@ -129,17 +123,13 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("I will fuck my wife when she gets home from work.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Fuck_1.png")
 graph
@@ -177,18 +167,13 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-graph <- ggplot(freq, aes(x = taboo, y = females_freq, fill = "males")) + 
-  geom_bar(stat="identity")
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("The campus smells like ass, I can't even focus because I’m trying to breathe normally.") +
   labs(fill = "Gender") +
-  theme(plot.title = element_text(size = 10.5))
+  theme(plot.title = element_text(size = 10.5, hjust = 0.5))
 
 png("Ass_1.png")
 graph
@@ -227,15 +212,13 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("That man over there has some really nice tits.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Tit_1.png")
 graph
@@ -273,15 +256,13 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("The person who hit my car is such a cunt!") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Cunt_2.png")
 graph
@@ -320,13 +301,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("Stop saying stuff like that, you dick!") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Dick_2.png")
 graph
@@ -364,15 +344,13 @@ if (max(freq$males) >  max(freq$females)) {
   max = max(freq$females)
 }
 
-
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("I hate texting, especially when I get a dry-ass reply.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Ass_2.png")
 graph
@@ -411,13 +389,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("Fuck off! I am trying to do my homework.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Fuck_2.png")
 graph
@@ -456,13 +433,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("Hey, sugar-tits, can I get your digits.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Tit_2.png")
 graph
@@ -501,13 +477,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("I cannot stand his annoying ass.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Ass_3.png")
 graph
@@ -546,13 +521,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("Fuck! I think I’ve failed the test.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Fuck_3.png")
 graph
@@ -591,13 +565,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("To be honest, that guy is kind of a dick.") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Dick_3.png")
 graph
@@ -636,13 +609,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("Stop being a cunt to the waitress and order already!") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Cunt_3.png")
 graph
@@ -681,13 +653,12 @@ if (max(freq$males) >  max(freq$females)) {
 }
 
 graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) + 
-  geom_bar(stat="identity", position = "dodge")
-
-graph <- graph + 
+  geom_bar(stat="identity", position = "dodge") + 
   scale_x_discrete(name ="Tabooness", limits = c("1","2","3", "4", "5", "6", "7")) + 
   scale_y_discrete(name = "Frequency", limits = seq(from = 0, to = as.integer(max), by = 1)) +
   ggtitle("Stop looking at my tits, you pervert!") +
-  labs(fill = "Gender")
+  labs(fill = "Gender") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 png("Tit_3.png")
 graph
