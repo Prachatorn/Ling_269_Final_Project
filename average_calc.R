@@ -3,10 +3,10 @@ library("dplyr")
 taboo_original <- read.csv("Excel Sheet/Taboo Context Survey  (Responses) - Form Responses 1.csv", stringsAsFactors = FALSE)
 males <- taboo_original %>%
   filter(Gender == "Male")
-write.csv(males, file = "Excel Sheet/Males", row.names = FALSE)
+write.csv(males, file = "Excel Sheet/Males.csv", row.names = FALSE)
 females <- taboo_original %>%
   filter(Gender == "Female")
-write.csv(females, file = "Excel Sheet/Females", row.names = FALSE)
+write.csv(females, file = "Excel Sheet/Females.csv", row.names = FALSE)
 
 
 rm(list=ls())
