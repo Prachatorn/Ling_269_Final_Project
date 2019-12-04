@@ -6,7 +6,7 @@ library("reshape2")
 
 # We were playing baseball yesterday, and I got hit right in the dick! / Dick_1
 rm(list=ls())
-swear_words <- read.csv("Taboo_context_survey.csv", stringsAsFactors = FALSE)
+swear_words <- read.csv("Excel Sheet/Taboo_context_survey.csv", stringsAsFactors = FALSE)
 
 Dick_1_Freq <- swear_words %>%
   select(Gender, Dick_1)
@@ -43,7 +43,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Dick_1.png")
+png("Graphs/Dick_1.png")
 graph
 dev.off()
 
@@ -87,7 +87,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5)) +
 
-png("Cunt_1.png")
+png("Graphs/Cunt_1.png")
 graph
 dev.off()
 
@@ -131,7 +131,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Fuck_1.png")
+png("Graphs/Fuck_1.png")
 graph
 dev.off()
 
@@ -175,7 +175,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(size = 10.5, hjust = 0.5))
 
-png("Ass_1.png")
+png("Graphs/Ass_1.png")
 graph
 dev.off()
 
@@ -220,7 +220,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Tit_1.png")
+png("Graphs/Tit_1.png")
 graph
 dev.off()
 
@@ -264,7 +264,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Cunt_2.png")
+png("Graphs/Cunt_2.png")
 graph
 dev.off()
 
@@ -308,7 +308,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Dick_2.png")
+png("Graphs/Dick_2.png")
 graph
 dev.off()
 
@@ -352,7 +352,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Ass_2.png")
+png("Graphs/Ass_2.png")
 graph
 dev.off()
 
@@ -396,7 +396,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Fuck_2.png")
+png("Graphs/Fuck_2.png")
 graph
 dev.off()
 
@@ -440,7 +440,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Tit_2.png")
+png("Graphs/Tit_2.png")
 graph
 dev.off()
 
@@ -484,7 +484,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Ass_3.png")
+png("Graphs/Ass_3.png")
 graph
 dev.off()
 
@@ -528,7 +528,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Fuck_3.png")
+png("Graphs/Fuck_3.png")
 graph
 dev.off()
 
@@ -572,7 +572,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Dick_3.png")
+png("Graphs/Dick_3.png")
 graph
 dev.off()
 
@@ -616,7 +616,7 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Cunt_3.png")
+png("Graphs/Cunt_3.png")
 graph
 dev.off()
 
@@ -660,6 +660,6 @@ graph <- ggplot(freq2, aes(x = taboo, y = value, fill = variable)) +
   labs(fill = "Gender") +
   theme(plot.title = element_text(hjust = 0.5))
 
-png("Tit_3.png")
+png("Graphs/Tit_3.png")
 graph
 dev.off()
