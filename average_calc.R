@@ -40,7 +40,7 @@ Fuck_1_taboo <- mean(taboo$Fuck_1)
 
 Fuck_1 <- c(Fuck_1_male, Fuck_1_female, Fuck_1_taboo)
 
-# Ass_1 / The campus smells like Ass, I can't even focus because I’m trying to breathe normally.
+# Ass_1 / The campus smells like ass, I can't even focus because I’m trying to breathe normally.
 
 Ass_1_male <- mean(males$Ass_1)
 Ass_1_female <- mean(females$Ass_1)
@@ -143,5 +143,41 @@ row.names(mean_average)[1] <- "Males"
 row.names(mean_average)[2] <- "Females"
 row.names(mean_average)[3] <- "Total Average"
 
-write.csv(mean_average, file = "mean_average.csv")
-          
+write.csv(mean_average, file = "Excel Sheet/mean_average.csv")
+
+# Gender total average
+
+ass_male <- (mean(males$Ass_1) + mean(males$Ass_2) + mean(males$Ass_3)) / 3
+dick_male <- (mean(males$Dick_1) + mean(males$Dick_2) + mean(males$Dick_3)) / 3
+cunt_male <- (mean(males$Cunt_1) + mean(males$Cunt_2) + mean(males$Cunt_3)) / 3
+fuck_male <- (mean(males$Fuck_1) + mean(males$Fuck_2) + mean(males$Fuck_3)) / 3
+tits_male <- (mean(males$Tit_1) + mean(males$Tits_2) + mean(males$Tits_3)) / 3
+
+names <- c("dick", "cunt", "fuck", "ass", "tits")
+
+male_average <- data.frame(dick_male, cunt_male, fuck_male, ass_male, tits_male)
+male_average <- t(male_average)
+colnames(male_average)[1] <- "average"
+
+male_graph <- data.frame(male_average)
+
+png("Graphs/Male_Average.png")
+barplot(male_graph$average, main="Male Average Tabooness Score", ylab="Tabooness", names.arg = names, col = "darkblue")
+dev.off()
+
+ass_female <- (mean(females$Ass_1) + mean(females$Ass_2) + mean(females$Ass_3)) / 3
+dick_female <- (mean(females$Dick_1) + mean(females$Dick_2) + mean(females$Dick_3)) / 3
+cunt_female <- (mean(females$Cunt_1) + mean(females$Cunt_2) + mean(females$Cunt_3)) / 3
+fuck_female <- (mean(females$Fuck_1) + mean(females$Fuck_2) + mean(females$Fuck_3)) / 3
+tits_female <- (mean(females$Tit_1) + mean(females$Tits_2) + mean(females$Tits_3)) / 3
+
+female_average <- data.frame(dick_female, cunt_female, fuck_female, ass_female, tits_female)
+
+female_average <- t(female_average)
+colnames(female_average)[1] <- "average"
+
+female_graph <- data.frame(female_average)
+
+png("Graphs/Female_Average.png")
+barplot(female_graph$average, main="Female Average Tabooness Score", ylab="Tabooness", names.arg = names, col = "red")
+dev.off()
