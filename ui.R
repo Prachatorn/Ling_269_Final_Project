@@ -1,0 +1,40 @@
+library(shiny)
+library(shinythemes)
+library(plotly)
+
+shinyUI(
+  navbarPage(
+    "Taboo Ratings For Each Sentences",
+    theme = shinytheme("united"),
+    tabPanel(
+      "Ass",
+      mainPanel(plotOutput("ass1")),
+      mainPanel(plotOutput("ass2")),
+      mainPanel(plotOutput("ass3"))
+    ),
+    tabPanel(
+      "Cunt",
+      mainPanel(plotOutput("cunt1")),
+      mainPanel(plotOutput("cunt2")),
+      mainPanel(plotOutput("cunt3"))
+    ),
+    tabPanel(
+      "Dick",
+      mainPanel(plotOutput("dick1")),
+      mainPanel(plotOutput("dick2")),
+      mainPanel(plotOutput("dick3"))
+    ),
+    tabPanel(
+      "Fuck",
+      mainPanel(plotOutput("fuck1")),
+      mainPanel(plotOutput("fuck2")),
+      mainPanel(plotOutput("fuck3"))
+    ),
+    tabPanel(
+      "Tits",
+      mainPanel(plotOutput("tits1")),
+      mainPanel(plotOutput("tits2")),
+      mainPanel(plotOutput("tits3"))
+    )
+  )
+)
