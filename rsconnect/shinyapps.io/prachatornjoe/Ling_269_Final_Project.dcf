@@ -5,9 +5,9 @@ account: prachatornjoe
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1569790
-bundleId: 2645842
+bundleId: 2647985
 url: https://prachatornjoe.shinyapps.io/Ling_269_Final_Project/
-when: 1575611830.30079
+when: 1575683607.41608
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: average_calc.R|graph_making.R|Excel Sheet/Females.csv|Excel Sheet/Males.csv|Excel Sheet/mean_average.csv|Excel Sheet/Taboo Context Survey (Responses) - Form Responses 1.csv|Graphs
+ignoredFiles: graph_making.R|Excel Sheet/Females.csv|Excel Sheet/Males.csv|Excel Sheet/mean_average.csv
